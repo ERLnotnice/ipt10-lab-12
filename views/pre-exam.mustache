@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Exam</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+
+    <style>
+        body {
+            padding-top: 50px;
+            background-color: #e9ecef; /* Lighter gray for consistency */
+            font-family: 'Arial', sans-serif;
+        }
+        .main__container {
+            max-width: 600px;
+            margin: auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 12px; /* More rounded corners for a modern look */
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+            text-align: center;
+        }
+        h2 {
+            color: #007bff; /* Matching color with other pages */
+            margin-bottom: 20px;
+        }
+        h3 {
+            color: #343a40; /* Darker gray for better readability */
+            margin-bottom: 20px;
+        }
+        .start-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background-color: #007bff; /* Button color to match other pages */
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s; /* Transition for hover effect */
+        }
+        .start-button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="main__container">
+        <h2>Pre-Exam</h2>
+        <h3>Hi {{ complete_name }} &lt;{{ email }}&gt;!</h3>
+
+        <a href="/exam" class="start-button">Click here to begin the exam</a>
+    </div>
+</body>
+</html>
